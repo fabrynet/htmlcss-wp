@@ -11,6 +11,9 @@ body {
   background-image: url("../img/default-pattern.png");
   background-repeat: repeat;
 }
+a {
+  text-decoration: none;
+}
 #container {
   margin: 20px auto;
   width: 80%;
@@ -42,7 +45,6 @@ body {
   padding: 0 10px 0;
 }
 .inline-menu li a {
-  text-decoration: none;
   color: #fff;
 }
 .inline-menu li a:visited {
@@ -88,7 +90,7 @@ header {
   left: 50%;
   top: 70%;
   transform: translateX(-50%);
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
 }
 /* menu navigazione */
@@ -135,21 +137,24 @@ aside .feed {
   display: table;
   clear: both;
 }
-.feed .rss {
+.feed-title {
+  height: 60px;
+}
+.feed-title .rss {
   float: left;
   width: 20%;
 }
-.feed .title {
+.feed-title .title {
   float: left;
   width: 80%;
-  line-height: normal;
+  line-height: 60px;
+  text-align: center;
 }
 .rss img {
   width: 100%;
 }
 .feed a {
   color: green;
-  text-decoration: none;
 }
 .feed p {
   margin: 10px;
@@ -189,8 +194,13 @@ footer .social {
 }
 .social .facebook, .instagram, .github {
   float: left;
-  width: 33%;
+  width: 33.3%;
+  text-align: center;
+  line-height: 80px;
   /* debug */
-  background-color: green;
-  height: 100%;
+  /* background-color: green;
+  height: 100%; */
+}
+.facebook a, .instagram a, .github a {
+  color: lightgrey;
 }
