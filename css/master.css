@@ -1,0 +1,62 @@
+/* reset pagina */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* regole generali */
+.container {
+  margin: 1%;
+}
+header {
+  /* debug */
+  height: 200px;
+  background-color: yellow;
+}
+/* clearfix del main */
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* sezione principale */
+main {
+  margin: 0.5% auto;
+}
+.column-left {
+  float: left;
+  width: 25%;
+  /* debug */
+  height: 300px;
+  background-color: pink;
+}
+.column-center {
+  float: left;
+  width: 48%;
+  margin: 0 1%;
+  /* debug */
+  height: 500px;
+  background-color: violet;
+}
+.column-right {
+  float: left;
+  width: 25%;
+  /* debug */
+  /* height: 500px;
+  background-color: pink; */
+}
+.section {
+  width: 100%;
+  margin-bottom: 5%;
+  /* debug */
+  height: 200px;
+  background-color: pink;
+}
+
+/* footer */
+footer {
+  /* debug */
+  height: 100px;
+  background-color: lightblue;
+}
