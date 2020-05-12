@@ -15,6 +15,25 @@ body {
   margin: 20px auto;
   width: 80%;
 }
+/* stile per i blocchi di testo */
+.content, .feed, .widget {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px
+}
+.feed {
+  padding: 0;
+}
+/* stili per i titoli e i paragrafi */
+.title {
+  line-height: 2em;
+  font-size: 20px;
+  font-weight: 500;
+}
+.article {
+  line-height: 1.8em;
+}
+/* stili per i menu di navigazione */
 .inline-menu {
   line-height: 50px;
 }
@@ -34,6 +53,9 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
+/* fine regole generali */
+
+/* header del sito */
 header {
   height: 350px;
   font-family: Montserrat;
@@ -41,8 +63,6 @@ header {
   /* debug */
   /* background-color: yellow; */
 }
-
-/* header del sito */
 /* logo */
 #header-logo {
   position: relative;
@@ -88,7 +108,7 @@ header {
   display: table;
   clear: both;
 }
-aside {
+.row aside {
   float: left;
   width: 20%;
 }
@@ -97,27 +117,55 @@ aside {
   width: 58%;
   margin: 0 1%;
   /* debug */
-  height: 300px;
-  background-color: violet;
+  /* height: 300px;
+  background-color: violet; */
 }
+/* regole i feed */
 aside .feed {
   width: 100%;
   margin-bottom: 10px;
+  padding: 5px;
   /* debug */
-  height: 400px;
-  background-color: pink;
+  /* height: 400px;
+  background-color: pink; */
 }
+.feed-title:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.feed .rss {
+  float: left;
+  width: 20%;
+}
+.feed .title {
+  float: left;
+  width: 80%;
+  line-height: normal;
+}
+.rss img {
+  width: 100%;
+}
+.feed a {
+  color: green;
+  text-decoration: none;
+}
+.feed p {
+  margin: 10px;
+}
+/* regole per i widget */
 aside .widget {
   width: 100%;
   margin-bottom: 10px;
   /* debug */
-  height: 200px;
-  background-color: pink;
+  /* height: 200px; */
 }
 
 /* footer */
 footer {
-  /* debug */
   height: 100px;
-  background-color: lightblue;
+  background-color: #fff;
+  border-radius: 5px;
+  /* debug */
+  /* background-color: lightblue; */
 }
