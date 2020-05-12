@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap');
 /* reset pagina */
 * {
   margin: 0;
@@ -5,15 +6,79 @@
   box-sizing: border-box;
 }
 /* regole generali */
+body {
+  font-family: Roboto, sans-serif;
+  background-image: url("../img/default-pattern.png");
+  background-repeat: repeat;
+}
 #container {
   margin: 20px auto;
   width: 80%;
 }
-header {
-  /* debug */
-  height: 350px;
-  background-color: yellow;
+.inline-menu {
+  line-height: 50px;
 }
+.inline-menu li {
+  display: inline-block;
+  padding: 0 10px 0;
+}
+.inline-menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+.inline-menu li a:visited {
+  color: #fff;
+}
+.inline-menu li:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+header {
+  height: 350px;
+  font-family: Montserrat;
+  color: #fff;
+  /* debug */
+  /* background-color: yellow; */
+}
+
+/* header del sito */
+/* logo */
+#header-logo {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/bosco.jpg");
+  background-position: center;
+  border: 10px solid #fff;
+  /* debug */
+  /* background-color: green; */
+}
+#header-logo .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  font-size: 50px;
+}
+#header-logo .subtitle {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  font-weight: 500;
+}
+/* menu navigazione */
+#header-nav {
+  width: 100%;
+  height: 50px;
+  background-color: #504741;
+  text-align: center;
+}
+
+/* sezione principale */
 .row {
   margin: 10px auto;
 }
@@ -23,8 +88,6 @@ header {
   display: table;
   clear: both;
 }
-
-/* sezione principale */
 aside {
   float: left;
   width: 20%;
