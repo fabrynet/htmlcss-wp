@@ -24,9 +24,6 @@ a {
   border-radius: 5px;
   padding: 20px
 }
-.feed {
-  padding: 0;
-}
 /* stili per i titoli e i paragrafi */
 .title {
   line-height: 2em;
@@ -39,19 +36,25 @@ a {
 /* stili per i menu di navigazione */
 .inline-menu {
   line-height: 50px;
+  /* position: absolute;
+  left: 50%;
+  transform: translate(-50%) */
 }
 .inline-menu li {
   display: inline-block;
+  /* float: left; */
   padding: 0 10px 0;
+  border-left: 1px solid #000;
 }
 .inline-menu li a {
   color: #fff;
+  /* rendo linkabile l'intera area verticale di ogni li */
+  display: inline-block;
 }
 .inline-menu li a:visited {
   color: #fff;
 }
 .inline-menu li:hover {
-  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
@@ -106,6 +109,7 @@ header {
 }
 /* menu navigazione */
 #header-nav {
+  /* position: relative; */
   width: 100%;
   height: 50px;
   background-color: #504741;
@@ -157,12 +161,12 @@ aside .feed {
 }
 .feed-title .title {
   float: left;
-  width: 50px;
+  width: calc(100% - 60px);
   line-height: 1.3em;
   /* text-align: center; */
   margin: 5px;
 }
-.rss img {
+.feed-title .rss img {
   width: 100%;
 }
 .feed a {
@@ -206,7 +210,8 @@ footer .social {
 }
 .social .facebook, .instagram, .github {
   float: left;
-  width: 33.3%;
+  /* suddivido equamente lo spazio orizzontale in tre parti */
+  width: calc(100% / 3);
   text-align: center;
   line-height: 80px;
   /* debug */
@@ -215,4 +220,13 @@ footer .social {
 }
 .facebook a, .instagram a, .github a {
   color: lightgrey;
+}
+.facebook a:hover {
+  color: blue;
+}
+.instagram a:hover {
+  color: red;
+}
+.github a:hover {
+  color: black;
 }
